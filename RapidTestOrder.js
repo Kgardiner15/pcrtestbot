@@ -3,9 +3,16 @@ class RapidTestOrder {
     this.OrderState = {
       WELCOMING: () => {
         let aReturn = [];
-        this.stateCur = this.OrderState.RESERVING;
+        this.stateCur = this.OrderState.SIZE;
         aReturn.push("Welcome to Lemar's Pizza.");
         aReturn.push("What size of pizza would you like to order?");
+        return aReturn;
+      },
+      SIZE: () => {
+        letaReturn = [];
+        this.stateCur = this.OrderState.RESERVING;
+        aReturn.push("What toppings would you like?");
+        aReturn.push("We have Cheese and Pepperoni.");
         return aReturn;
       },
       RESERVING: (sInput) => {
