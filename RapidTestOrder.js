@@ -63,7 +63,7 @@ class RapidTestOrder {
       FINAL: (sInput) => {
         let aReturn = [];
         this.isDone = true;
-        if (sInput.toLowerCase().startsWith("y")) {
+        if (sInput.toLowerCase().startsWith('y')) {
             this.Drink = true;
         }
         if (this.Drink) {
