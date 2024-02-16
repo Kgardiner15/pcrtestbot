@@ -67,11 +67,12 @@ class RapidTestOrder {
             this.Drink = true;
         }
         if (this.Drink) {
-            aReturn.push (`Your order of a ${this.Size} ${this.Poutine} poutine with ${this.Topping} and a drink has been confirmed.`);
+            aReturn.push(`Your order of a ${this.Size} ${this.Poutine} poutine with ${this.Topping} and a drink has been confirmed.`);
         }
         else {
-          aReturn.push (`Your order of a ${this.Size} ${this.Poutine} poutine with ${this.Topping} has been confirmed.`);
+          aReturn.push(`Your order of a ${this.Size} ${this.Poutine} poutine with ${this.Topping} has been confirmed.`);
         }
+        return aReturn;
         } 
     };
 
