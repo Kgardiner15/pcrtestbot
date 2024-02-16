@@ -44,13 +44,13 @@ class RapidTestOrder {
       TOPPINGS: (sInput) => {
         let aReturn = [];
         this.stateCur = this.OrderState.FINAL;
-        if (sInput.toLowerCase().startsWith('extra gravy' || 'gravy')) {
+        if (sInput.toLowerCase().startsWith('extra gravy') || sInput.toLowerCase().startsWith('gravy')) {
             this.Topping = "extra gravy"
             aReturn.push("Extra gravy has been added to your poutine.");
         } else if (sInput.toLowerCase().startsWith('ba')) {
             this.Topping = "bacon"
             aReturn.push("Bacon has been added to your poutine.");
-        } else if (sInput.toLowerCase().startsWith('extra cheese' || 'cheese')) {
+        } else if (sInput.toLowerCase().startsWith('extra cheese') || sInput.toLowerCase().startsWith('cheese')) {
             this.Topping = "extra cheese"
             aReturn.push("Extra cheese has been added to your poutine.");
         } else {
